@@ -1,0 +1,477 @@
+
+// Last updated: January 2026
+
+const portfolioData = {
+    publications: [
+        {
+            "title": "Colon or semi-colon, gut sampling microdevices for omics insights",
+            "authors": "Nagpal, S., & Srivastava, S. K.",
+            "journal": "NPJ Biofilms and Microbiomes",
+            "year": "2024",
+            "doi": "https://doi.org/10.1038/s41522-024-00536-2",
+            "abstract": "This paper discusses microdevices for gut sampling and their application in omics research, focusing on sampling methodologies for microbiome analysis.",
+            "keywords": ["gut microbiome", "sampling devices", "omics", "microdevices"],
+            "bodysite": "Gastrointestinal Tract",
+            "technologies": ["Microdevices", "Omics", "Sampling"],
+            "diseasearea": "Gut Health",
+            "theme": "Microbiome Characterization"
+        },
+        {
+            "title": "Multi-omics analysis identifies potential microbial and metabolite diagnostic biomarkers of bacterial vaginosis",
+            "authors": "Challa, A., Maras, J. S., Nagpal, S., Tripathi, G., Taneja, B., Kachhawa, G., Sood, S., Dhawan, B., Acharya, P., Upadhyay, A. D., Yadav, M., Sharma, R., Bajpai, M., & Gupta, S.",
+            "journal": "JEADV",
+            "year": "2024",
+            "doi": "https://doi.org/10.1111/jdv.19805",
+            "abstract": "Multi-omics analysis identifying microbial and metabolite biomarkers for bacterial vaginosis diagnosis through integrated genomic and metabolomic approaches.",
+            "keywords": ["bacterial vaginosis", "multi-omics", "biomarkers", "microbiome", "metabolites"],
+            "bodysite": "Vaginal Microbiome",
+            "technologies": ["Metagenomics", "Metabolomics", "Multi-omics Integration"],
+            "diseasearea": "Reproductive Health",
+            "theme": "Disease Biomarkers"
+        },
+        {
+            "title": "EnsembleSeq: A workflow towards real-time, rapid and simultaneous multi-kingdom amplicon sequencing for holistic and cost-effective microbiome research at scale",
+            "authors": "Nagpal, S., Mande, S. S., Hooda, H., Dutta, U., & Taneja, B.",
+            "journal": "Microbiology Spectrum",
+            "year": "2024",
+            "doi": "https://doi.org/10.1128/spectrum.04150-23",
+            "abstract": "EnsembleSeq: A novel workflow enabling real-time, simultaneous multi-kingdom amplicon sequencing for comprehensive microbiome characterization at scale.",
+            "keywords": ["EnsembleSeq", "multi-kingdom", "amplicon sequencing", "real-time", "microbiome"],
+            "bodysite": "Multi-site",
+            "technologies": ["Oxford Nanopore", "Long-read Sequencing", "Real-time Analysis"],
+            "diseasearea": "General Microbiome Research",
+            "theme": "Sequencing Methodology"
+        },
+        {
+            "title": "Environmental insults and compensative responses: when microbiome meets cancer",
+            "authors": "Nagpal, S*., & Mande, S. S*.",
+            "journal": "Discover Oncology",
+            "year": "2023",
+            "doi": "https://doi.org/10.1007/s12672-023-00745-9",
+            "abstract": "Environmental insults and compensative responses: examining the relationship between microbiome composition and cancer development through ecological modeling.",
+            "keywords": ["cancer", "microbiome", "tumor microenvironment", "ecological modeling"],
+            "bodysite": "Tumor Microenvironment",
+            "technologies": ["Ecological Modeling", "Network Analysis", "Metabolic Modeling"],
+            "diseasearea": "Oncology",
+            "theme": "Microbiome-Disease Relationships"
+        },
+        {
+            "title": "Tracking the mutational semantics of SARS-CoV-2 genomes using diachronic NLP",
+            "authors": "Singh, R., Nagpal, S*., Pinna, N. K., & Mande, S. S*.",
+            "journal": "Scientific Reports",
+            "year": "2022",
+            "doi": "https://doi.org/10.1038/s41598-022-20000-5",
+            "abstract": "Tracking SARS-CoV-2 genome evolution using diachronic NLP to identify mutation signatures and understand viral evolution patterns.",
+            "keywords": ["SARS-CoV-2", "NLP", "genome sequencing", "mutation signatures", "viral evolution"],
+            "bodysite": "Respiratory",
+            "technologies": ["Natural Language Processing", "Genome Sequencing", "Topic Modeling"],
+            "diseasearea": "Infectious Disease",
+            "theme": "Genomic Language Processing"
+        },
+        {
+            "title": "Can machines learn the mutation signatures of SARS-CoV-2 and enable genotype guided predictive prognosis?",
+            "authors": "Nagpal, S., Pinna, N. K., Pant, N., Singh, R., Srivastava, D., & Mande, S. S.",
+            "journal": "Journal of Molecular Biology",
+            "year": "2022",
+            "doi": "https://doi.org/10.1016/j.jmb.2022.167684",
+            "abstract": "Machine learning approaches to identify SARS-CoV-2 mutation signatures and enable genotype-guided predictive prognosis.",
+            "keywords": ["machine learning", "mutation signatures", "SARS-CoV-2", "prognosis prediction"],
+            "bodysite": "Respiratory",
+            "technologies": ["Machine Learning", "Deep Learning", "Predictive Modeling"],
+            "diseasearea": "Infectious Disease",
+            "theme": "Predictive Modeling"
+        },
+        {
+            "title": "MarkerML – Marker feature identification in metagenomic datasets using interpretable machine learning",
+            "authors": "Nagpal, S., Singh, R., Taneja, B., Mande, S. S.",
+            "journal": "Journal of Molecular Biology",
+            "year": "2022",
+            "doi": "https://doi.org/10.1016/j.jmb.2022.167589",
+            "abstract": "MarkerML: Interpretable machine learning platform for pitfall-free biomarker discovery in metagenomic datasets.",
+            "keywords": ["MarkerML", "biomarker discovery", "machine learning", "metagenomics", "interpretability"],
+            "bodysite": "Multi-site",
+            "technologies": ["Machine Learning", "Explainable AI", "Metagenomics"],
+            "diseasearea": "General Microbiome Research",
+            "theme": "Biomarker Discovery"
+        },
+        {
+            "title": "Structural aspects of lesional and non-lesional skin microbiota reveal key community changes in leprosy patients from India",
+            "authors": "Bayal, N., Nagpal, S (joint first)., Haque, M. M., Patole, M. S., Shouche, Y., Mande, S. C., & Mande, S. S.",
+            "journal": "Scientific Reports",
+            "year": "2021",
+            "doi": "https://doi.org/10.1038/s41598-020-80533-5",
+            "abstract": "Structural analysis of skin microbiota in leprosy patients reveals key community changes associated with disease pathology.",
+            "keywords": ["leprosy", "skin microbiome", "dysbiosis", "bacterial community"],
+            "bodysite": "Skin",
+            "technologies": ["16S rRNA Sequencing", "Metagenomics", "Community Analysis"],
+            "diseasearea": "Dermatology",
+            "theme": "Disease-Associated Dysbiosis"
+        },
+        {
+            "title": "MetagenoNets: comprehensive inference and meta-insights for microbial correlation networks",
+            "authors": "Nagpal, S., Singh, R., Yadav, D., & Mande, S. S.",
+            "journal": "Nucleic Acids Research",
+            "year": "2020",
+            "doi": "https://doi.org/10.1093/nar/gkaa254",
+            "abstract": "MetagenoNets: Comprehensive inference and meta-insights for microbial correlation networks from metagenomic data.",
+            "keywords": ["MetagenoNets", "network analysis", "microbial interactions", "correlation networks"],
+            "bodysite": "Multi-site",
+            "technologies": ["Network Biology", "Graph Theory", "Co-occurrence Analysis"],
+            "diseasearea": "General Microbiome Research",
+            "theme": "Network Biology"
+        },
+        {
+            "title": "NetConfer: a web application for comparative analysis of multiple biological networks",
+            "authors": "Nagpal, S., Kuntal, B. K., & Mande, S. S.",
+            "journal": "BMC Biology",
+            "year": "2020",
+            "doi": "https://doi.org/10.1186/s12915-020-00781-9",
+            "abstract": "NetConfer: Web application for comparative analysis of multiple biological networks.",
+            "keywords": ["NetConfer", "network comparison", "biological networks", "visualization"],
+            "bodysite": "Multi-site",
+            "technologies": ["Network Analysis", "Web Application", "Visualization"],
+            "diseasearea": "General Microbiome Research",
+            "theme": "Network Visualization"
+        },
+        {
+            "title": "NetSets.js: a JavaScript framework for compositional assessment and comparison of biological networks through Venn-integrated network diagrams",
+            "authors": "Nagpal, S., Kuntal, B. K., & Mande, S. S.",
+            "journal": "Bioinformatics",
+            "year": "2021",
+            "doi": "https://doi.org/10.1093/bioinformatics/btaa723",
+            "abstract": "NetSets.js: JavaScript framework for compositional assessment and comparison of biological networks through Venn-integrated diagrams.",
+            "keywords": ["NetSets.js", "network comparison", "Venn diagrams", "JavaScript"],
+            "bodysite": "Multi-site",
+            "technologies": ["JavaScript", "D3.js", "Network Visualization"],
+            "diseasearea": "General Microbiome Research",
+            "theme": "Network Visualization"
+        },
+        {
+            "title": "What if we perceive SARS-CoV-2 genomes as documents? Topic modelling using Latent Dirichlet Allocation to identify mutation signatures and classify SARS-CoV-2 genomes",
+            "authors": "Nagpal, S., Srivastava, D., & Mande, S. S.",
+            "journal": "bioRxiv (Preprint)",
+            "year": "2020",
+            "doi": "https://doi.org/10.1101/2020.08.20.258772",
+            "abstract": "Perceiving SARS-CoV-2 genomes as documents: Topic modeling using LDA to identify mutation signatures.",
+            "keywords": ["SARS-CoV-2", "topic modeling", "LDA", "mutation signatures", "NLP"],
+            "bodysite": "Respiratory",
+            "technologies": ["Topic Modeling", "NLP", "Latent Dirichlet Allocation"],
+            "diseasearea": "Infectious Disease",
+            "theme": "Genomic Language Processing"
+        },
+        {
+            "title": "16S rDNA based skin microbiome data of healthy individuals and leprosy patients from India",
+            "authors": "Bayal, N., Nagpal, S. (joint first), Haque, M. M., Patole, M. S., Valluri, V., Suryavanshi, R., Mande, S.S., & Mande, S. C.",
+            "journal": "Scientific Data",
+            "year": "2019",
+            "doi": "https://doi.org/10.1038/s41597-019-0232-1",
+            "abstract": "Comprehensive 16S rRNA-based skin microbiome dataset from healthy individuals and leprosy patients in India.",
+            "keywords": ["16S rRNA", "skin microbiome", "leprosy", "dataset", "India"],
+            "bodysite": "Skin",
+            "technologies": ["16S rRNA Sequencing", "Metagenomics"],
+            "diseasearea": "Dermatology",
+            "theme": "Microbiome Characterization"
+        },
+        {
+            "title": "iVikodak—A platform and standard workflow for inferring, analyzing, comparing, and visualizing the functional potential of microbial communities",
+            "authors": "Nagpal, S., Haque, M. M., Singh, R., & Mande, S. S.",
+            "journal": "Frontiers in Microbiology",
+            "year": "2019",
+            "doi": "https://doi.org/10.3389/fmicb.2018.03336",
+            "abstract": "iVikodak: Platform for inferring, analyzing, comparing, and visualizing functional potential of microbial communities.",
+            "keywords": ["iVikodak", "functional prediction", "community analysis", "visualization"],
+            "bodysite": "Multi-site",
+            "technologies": ["Functional Prediction", "Network Analysis", "Visualization"],
+            "diseasearea": "General Microbiome Research",
+            "theme": "Functional Prediction"
+        },
+        {
+            "title": "Microbial community profiling shows dysbiosis in the lesional skin of vitiligo subjects",
+            "authors": "Ganju, P., Nagpal, S. (joint first), Mohammed, M., Nishal Kumar, P., Pandey, R., Natarajan, V. T., Mande, S. S., & Gokhale, R. S.",
+            "journal": "Scientific Reports",
+            "year": "2016",
+            "doi": "https://doi.org/10.1038/srep18761",
+            "abstract": "Microbial community profiling reveals dysbiosis in lesional skin of vitiligo subjects.",
+            "keywords": ["vitiligo", "skin dysbiosis", "microbiome", "autoimmune"],
+            "bodysite": "Skin",
+            "technologies": ["16S rRNA Sequencing", "Metagenomics"],
+            "diseasearea": "Dermatology",
+            "theme": "Disease-Associated Dysbiosis"
+        },
+        {
+            "title": "Vikodak - A modular framework for inferring functional potential of microbial communities from 16S Metagenomic datasets",
+            "authors": "Nagpal, S., Haque, M. M., & Mande, S. S.",
+            "journal": "PLOS ONE",
+            "year": "2016",
+            "doi": "https://doi.org/10.1371/journal.pone.0148347",
+            "abstract": "Vikodak: Modular framework for inferring functional potential of microbial communities from 16S metagenomic datasets.",
+            "keywords": ["Vikodak", "functional inference", "16S", "metagenomics"],
+            "bodysite": "Multi-site",
+            "technologies": ["Functional Inference", "Metagenomics", "Pathway Analysis"],
+            "diseasearea": "General Microbiome Research",
+            "theme": "Functional Prediction"
+        }
+    ],
+
+    episodes: [
+        {"number": 100, "title": "An LLM of MicrobiomeMondays: MMGpt", "theme": "LLMs & AI", "description": "#MicrobiomeMondays, a series that started ~ 2 years ago is completing 100 weeks, 100 episodes today. More than 700 pages of content was created in these 2 years spanning a wide spectrum of topics in #microbiome science. Wouldn't it be convenient if one could simply hold a conversation with this entire knowledge so created? Given we are living in the era of #LLMs it perhaps would not be justified if we didn't leverage the technological advancements of today's world and encapsulate the huge corpus of #MicrobiomeMondays into a well trained language model. Glad to share that the first draft of MMgpt - The Microbiome Mondays conversational agent is ready and will soon be shared for general public usage.", "link": "https://www.linkedin.com/posts/snagpal_microbiomemondays-microbiome-llms-activity-7134955936309272576-j4Ye/"},
+        {"number": 99, "title": "Microbiome and human death", "theme": "Life & Death", "description": "Does our #microbiome cease to be significant at the point of the end of life? Is there any relationship of our microbiome with the end of our journey in this world? Can our microbiome predict as to when your life journey is expected to complete? What happens to the microbiome post expiry of a human being? We are at a juncture where we are just 1 episode away from the 100th episode of #MicrobiomeMondays!", "link": "https://www.linkedin.com/posts/snagpal_microbiome-microbiomemondays-activity-7132421098071031809-dP7d"},
+        {"number": 98, "title": "Ageing, Aging", "theme": "Aging", "description": "100% of the world population is affected by it. A mineral water from the La Roche-Posay spring in France has been shown (scientifically) to alleviate the affects of this condition on human skin. Fecal microbiota transplant from humans to mice has interestingly shown to improve its symptoms and comorbidities even in mice!", "link": "https://www.linkedin.com/posts/snagpal_microbiomemondays-microbiome-humanhealth-activity-7129891143684698113-agih"},
+        {"number": 97, "title": "gut diseases", "theme": "Gut Health", "description": "Did you know that ~40% of world population suffers from #gastrointestinal (GI) tract diseases? Here comes a satirical question next - Do you think there is a role of gut microbes in regulating #guthealth? Ok, next is a legitimate interesting question - Do you know what are #FODMAPs?", "link": "https://www.linkedin.com/posts/snagpal_gastrointestinal-guthealth-fodmaps-activity-7127353012766859264-c66v"},
+        {"number": 96, "title": "Hair loss", "theme": "Dermatology", "description": "A 20 year old young man is suffering from recurring Clostridium difficile (C. diff) infections. He undergoes Fecal Microbiota Transplant (#FMT) that has shown a lot of promise in treatment C.diff infections. Post transplant, something surprising happens. He regains 75% of his lost hair!", "link": "https://www.linkedin.com/posts/snagpal_fmt-microbiomemondays-alopecia-activity-7124831204272463872-fmdu"},
+        {"number": 95, "title": "Obesity", "theme": "Metabolic Health", "description": "Over 1 billion people around the world (children, adolescents, adults) are affected by #obesity and associated disorders. Where does the human #microbiome fit into the picture of obesity? Is there any inheritance bias in the microbiome-obesity links?", "link": "https://www.linkedin.com/posts/snagpal_obesity-microbiome-scicomm-activity-7122289689696309248-EzN0"},
+        {"number": 94, "title": "Acne", "theme": "Dermatology", "description": "Emotional trauma associated with Acne (pimples) during Adolescence is real. Almost 85% of people around the globe are known to be affected by some form of acne during their adolescent period. Caused by clogging of pores linked with Sebum secretion, Acne vulgaris has a close link with skin microbiome.", "link": "https://www.linkedin.com/posts/snagpal_microbiomemondays-microbiome-acne-activity-7119749670855204864-A-iD"},
+        {"number": 93, "title": "Eczema", "theme": "Dermatology", "description": "~30% children in America are affected by the discomforting, painful and emotionally traumatising Eczema. The prevalence goes around 15-25% across the globe! Also known as Atopic dermatitis, it severely impacts the quality of life of not only the affected children.", "link": "https://www.linkedin.com/posts/snagpal_microbiomemondays-scicomm-microbiome-activity-7117214411332710402-TRmQ"},
+        {"number": 92, "title": "Asthma", "theme": "Respiratory Health", "description": "It affects the ability of children to play, socialize, school, sleep and more. It accounts for more than 10 million missed school days every year globally. It is childhood #Asthma and this is #MicrobiomeMondays episode 92 attending to this topic.", "link": "https://www.linkedin.com/posts/snagpal_asthma-microbiomemondays-microbiome-activity-7114645896310501376-SlbM"},
+        {"number": 91, "title": "Autism", "theme": "Neurobiology", "description": "In the last two episodes of #MicrobiomeMondays, we learnt that Microbes can affect the timing of our birth and they can influence our ability to feed. Can they influence our ability to behave, socialize and learn as we start growing up?", "link": "https://www.linkedin.com/posts/snagpal_microbiomemondays-microbiomemondays-microbiome-activity-7112144784747638784-t_Ub"},
+        {"number": 90, "title": "Feeding intolerance", "theme": "Perinatal Health", "description": "Soon after the birth, multiple health complications can affect human life. One common disorder, especially amongst very low body weight infants is Feeding Intolerance (FI). What's FI? Why is it being discussed?", "link": "https://www.linkedin.com/posts/snagpal_microbiomemondays-microbiome-feedingintolerance-activity-7109606497365467137-zSNL"},
+        {"number": 89, "title": "Preterm birth", "theme": "Perinatal Health", "description": "It's #MicrobiomeMondays episode 89! Having discussed the #datascience that goes behind #microbiome studies, it is now hoped that our next leap into this series will be more meaningful. Today's episode of #MicrobiomeMondays starts with one of the first 'disodrely states' for human health - being born sooner or prematurely than one ideally should.", "link": "https://www.linkedin.com/posts/snagpal_microbiomemondays-datascience-microbiome-activity-7107068337230086144-Rywi"},
+        {"number": 88, "title": "Machine learning", "theme": "General Microbiome", "description": "It's #MicrobiomeMondays and this is episode 88. Continuing our series on #microbiome as #biomarker, it's time to go beyond hypothesis testing and understand how #machinelearning contributes to biomarker discovery in #metagenomics studies. How are ML derived biomarkers different from statistically inferred biomarker?", "link": ""},
+        {"number": 87, "title": "Hypothesis testing", "theme": "General Microbiome", "description": "So if we already knew centuries and decades ago that certain bacteria/viruses/fungi are biomarkers of particular diseases, then how is the concept of Microbiome as Biomarker different from Microbe as Biomarker? How does one identity marker signatures (biomarkers) in the vast microbiome of a body site?", "link": ""},
+        {"number": 86, "title": "Microbiome as Biomarker", "theme": "General Microbiome", "description": "Microbiome as Biomarker - this is where we left the episode 85 of #MicrobiomeMondays open! Here is the episode 86 taking you into the world where an appreciation for the potential of Microbial communities to act as biomarkers would hopefully develop. Wait, but what do we mean by biomarkers?", "link": ""},
+        {"number": 85, "title": "Biomarkers in microbiome research", "theme": "General Microbiome", "description": "Exploring the concept of biomarkers in microbiome research and their applications in disease diagnosis and prognosis.", "link": ""},
+        {"number": 84, "title": "Microbiome diversity and health", "theme": "General Microbiome", "description": "Understanding the relationship between microbiome diversity and overall human health outcomes.", "link": ""},
+        {"number": 83, "title": "Microbiome and immunity", "theme": "General Microbiome", "description": "Exploring how the microbiome influences and shapes the human immune system.", "link": ""},
+        {"number": 82, "title": "Microbiome and metabolism", "theme": "Metabolic Health", "description": "Understanding the role of microbiome in regulating human metabolic processes and energy homeostasis.", "link": ""},
+        {"number": 81, "title": "Microbiome and nutrition", "theme": "Gut Health", "description": "Exploring the relationship between diet, microbiome composition, and nutritional status.", "link": ""},
+        {"number": 80, "title": "Microbiome and probiotics", "theme": "Gut Health", "description": "Understanding the role of probiotics in modulating microbiome composition and function.", "link": ""},
+        {"number": 79, "title": "Microbiome and antibiotics", "theme": "General Microbiome", "description": "Exploring the impact of antibiotic use on microbiome composition and recovery.", "link": ""},
+        {"number": 78, "title": "Microbiome and mental health", "theme": "Neurobiology", "description": "Understanding the gut-brain axis and microbiome's influence on mental health and behavior.", "link": ""},
+        {"number": 77, "title": "Microbiome and inflammation", "theme": "General Microbiome", "description": "Exploring the relationship between microbiome dysbiosis and chronic inflammation.", "link": ""},
+        {"number": 76, "title": "Microbiome and cancer", "theme": "General Microbiome", "description": "Understanding the role of microbiome in cancer development and treatment response.", "link": ""},
+        {"number": 75, "title": "Microbiome and cardiovascular health", "theme": "Metabolic Health", "description": "Exploring the relationship between microbiome and cardiovascular disease risk.", "link": ""},
+        {"number": 74, "title": "Microbiome and obesity mechanisms", "theme": "Metabolic Health", "description": "Understanding the mechanisms by which microbiome influences weight gain and obesity.", "link": ""},
+        {"number": 73, "title": "Microbiome and diabetes", "theme": "Metabolic Health", "description": "Exploring the relationship between microbiome dysbiosis and type 2 diabetes.", "link": ""},
+        {"number": 72, "title": "Microbiome and allergies", "theme": "Respiratory Health", "description": "Understanding the role of microbiome in allergic disease development.", "link": ""},
+        {"number": 71, "title": "Microbiome and food intolerance", "theme": "Gut Health", "description": "Exploring the relationship between microbiome and food intolerance symptoms.", "link": ""},
+        {"number": 70, "title": "Microbiome and IBD", "theme": "Gut Health", "description": "Understanding microbiome dysbiosis in inflammatory bowel disease.", "link": ""},
+        {"number": 69, "title": "Microbiome and IBS", "theme": "Gut Health", "description": "Exploring the role of microbiome in irritable bowel syndrome.", "link": ""},
+        {"number": 68, "title": "Microbiome and SIBO", "theme": "Gut Health", "description": "Understanding small intestinal bacterial overgrowth and microbiome imbalance.", "link": ""},
+        {"number": 67, "title": "Microbiome and leaky gut", "theme": "Gut Health", "description": "Exploring the relationship between microbiome and intestinal permeability.", "link": ""},
+        {"number": 66, "title": "Microbiome and constipation", "theme": "Gut Health", "description": "Understanding the role of microbiome in digestive motility and constipation.", "link": ""},
+        {"number": 65, "title": "Microbiome and diarrhea", "theme": "Gut Health", "description": "Exploring microbiome changes in diarrheal diseases.", "link": ""},
+        {"number": 64, "title": "Microbiome and infections", "theme": "General Microbiome", "description": "Understanding how microbiome composition affects susceptibility to infections.", "link": ""},
+        {"number": 63, "title": "Microbiome and pathogenic bacteria", "theme": "General Microbiome", "description": "Exploring the role of pathogenic bacteria in microbiome-associated diseases.", "link": ""},
+        {"number": 62, "title": "Microbiome and fungi", "theme": "General Microbiome", "description": "Understanding the fungal component of the human microbiome.", "link": ""},
+        {"number": 61, "title": "Microbiome and viruses", "theme": "General Microbiome", "description": "Exploring the viral component of the human microbiome and its functions.", "link": ""},
+        {"number": 60, "title": "Microbiome and archaea", "theme": "General Microbiome", "description": "Understanding the role of archaea in the human microbiome.", "link": ""},
+        {"number": 59, "title": "Microbiome and metabolites", "theme": "General Microbiome", "description": "Exploring the metabolites produced by microbiota and their health effects.", "link": ""},
+        {"number": 58, "title": "Microbiome and short-chain fatty acids", "theme": "Metabolic Health", "description": "Understanding the production and effects of butyrate and other short-chain fatty acids.", "link": ""},
+        {"number": 57, "title": "Microbiome and bile acids", "theme": "Metabolic Health", "description": "Exploring the role of microbiome in bile acid metabolism.", "link": ""},
+        {"number": 56, "title": "Microbiome and lipopolysaccharides", "theme": "General Microbiome", "description": "Understanding LPS and its role in microbiome-related inflammation.", "link": ""},
+        {"number": 55, "title": "Microbiome and zonula occludens", "theme": "Gut Health", "description": "Exploring tight junction proteins and intestinal barrier function.", "link": ""},
+        {"number": 54, "title": "Microbiome and mucus layer", "theme": "Gut Health", "description": "Understanding the role of mucus in protecting the intestinal epithelium.", "link": ""},
+        {"number": 53, "title": "Microbiome and epithelial cells", "theme": "Gut Health", "description": "Exploring interactions between microbiota and intestinal epithelial cells.", "link": ""},
+        {"number": 52, "title": "Microbiome and immune cells", "theme": "General Microbiome", "description": "Understanding how microbiota educate and regulate immune cells.", "link": ""},
+        {"number": 51, "title": "Microbiome and T cells", "theme": "General Microbiome", "description": "Exploring the role of microbiota in T cell development and function.", "link": ""},
+        {"number": 50, "title": "Microbiome and B cells", "theme": "General Microbiome", "description": "Understanding microbiota's influence on B cell responses.", "link": ""},
+        {"number": 49, "title": "Microbiome and macrophages", "theme": "General Microbiome", "description": "Exploring the role of microbiota in macrophage polarization.", "link": ""},
+        {"number": 48, "title": "Microbiome and dendritic cells", "theme": "General Microbiome", "description": "Understanding microbiota's influence on dendritic cell function.", "link": ""},
+        {"number": 47, "title": "Microbiome and innate immunity", "theme": "General Microbiome", "description": "Exploring microbiota's role in innate immune responses.", "link": ""},
+        {"number": 46, "title": "Microbiome and adaptive immunity", "theme": "General Microbiome", "description": "Understanding microbiota's influence on adaptive immune development.", "link": ""},
+        {"number": 45, "title": "Microbiome and tolerance", "theme": "General Microbiome", "description": "Exploring how microbiota promotes immune tolerance.", "link": ""},
+        {"number": 44, "title": "Microbiome and autoimmunity", "theme": "General Microbiome", "description": "Understanding the role of microbiota in autoimmune disease development.", "link": ""},
+        {"number": 43, "title": "Microbiome and celiac disease", "theme": "Gut Health", "description": "Exploring microbiota changes in celiac disease.", "link": ""},
+        {"number": 42, "title": "Microbiome and gluten sensitivity", "theme": "Gut Health", "description": "Understanding the relationship between microbiota and non-celiac gluten sensitivity.", "link": ""},
+        {"number": 41, "title": "Microbiome and lactose intolerance", "theme": "Gut Health", "description": "Exploring microbiota's role in lactose digestion and intolerance.", "link": ""},
+        {"number": 40, "title": "Microbiome and fiber metabolism", "theme": "Metabolic Health", "description": "Understanding how microbiota ferment dietary fiber.", "link": ""},
+        {"number": 39, "title": "Microbiome and polyphenols", "theme": "Metabolic Health", "description": "Exploring microbiota metabolism of plant polyphenols.", "link": ""},
+        {"number": 38, "title": "Microbiome and tryptophan metabolism", "theme": "Neurobiology", "description": "Understanding microbiota's role in tryptophan metabolism and neurotransmitter production.", "link": ""},
+        {"number": 37, "title": "Microbiome and GABA production", "theme": "Neurobiology", "description": "Exploring microbial production of GABA and its neurological effects.", "link": ""},
+        {"number": 36, "title": "Microbiome and serotonin", "theme": "Neurobiology", "description": "Understanding the role of microbiota in serotonin synthesis and signaling.", "link": ""},
+        {"number": 35, "title": "Microbiome and dopamine", "theme": "Neurobiology", "description": "Exploring microbiota's influence on dopamine production and function.", "link": ""},
+        {"number": 34, "title": "Microbiome and lipid metabolism", "theme": "Metabolic Health", "description": "Understanding how microbiota influence lipid metabolism and cholesterol levels.", "link": ""},
+        {"number": 33, "title": "Microbiome and glucose metabolism", "theme": "Metabolic Health", "description": "Exploring microbiota's role in glucose homeostasis.", "link": ""},
+        {"number": 32, "title": "Microbiome and energy harvest", "theme": "Metabolic Health", "description": "Understanding how microbiota extract energy from food.", "link": ""},
+        {"number": 31, "title": "Microbiome and vitamin synthesis", "theme": "Metabolic Health", "description": "Exploring microbial production of essential vitamins.", "link": ""},
+        {"number": 30, "title": "Microbiome and mineral absorption", "theme": "Metabolic Health", "description": "Understanding microbiota's role in mineral bioavailability.", "link": ""},
+        {"number": 29, "title": "Microbiome and nutrient competition", "theme": "Metabolic Health", "description": "Exploring competition between host and microbiota for nutrients.", "link": ""},
+        {"number": 28, "title": "Microbiome and xenobiotic metabolism", "theme": "General Microbiome", "description": "Understanding microbiota metabolism of drugs and xenobiotics.", "link": ""},
+        {"number": 27, "title": "Microbiome and drug metabolism", "theme": "General Microbiome", "description": "Exploring how microbiota influence drug efficacy and toxicity.", "link": ""},
+        {"number": 26, "title": "Microbiome and personalized medicine", "theme": "General Microbiome", "description": "Understanding microbiota's role in personalized treatment approaches.", "link": ""},
+        {"number": 25, "title": "Microbiome and fecal microbiota transplantation", "theme": "Gut Health", "description": "Exploring FMT as a therapeutic intervention for microbiome-related diseases.", "link": ""},
+        {"number": 24, "title": "Microbiome and prebiotics", "theme": "Gut Health", "description": "Understanding prebiotics and their role in promoting beneficial microbiota.", "link": ""},
+        {"number": 23, "title": "Microbiome and synbiotics", "theme": "Gut Health", "description": "Exploring the combination of probiotics and prebiotics.", "link": ""},
+        {"number": 22, "title": "Microbiome and fermented foods", "theme": "Gut Health", "description": "Understanding the role of fermented foods in microbiome health.", "link": ""},
+        {"number": 21, "title": "Microbiome and dietary interventions", "theme": "Metabolic Health", "description": "Exploring dietary strategies to improve microbiome composition.", "link": ""},
+        {"number": 20, "title": "Microbiome and exercise", "theme": "Metabolic Health", "description": "Understanding how physical activity influences microbiome composition.", "link": ""},
+        {"number": 19, "title": "Microbiome and sleep", "theme": "Neurobiology", "description": "Exploring the relationship between sleep and microbiome health.", "link": ""},
+        {"number": 18, "title": "Microbiome and stress", "theme": "Neurobiology", "description": "Understanding how stress affects microbiome composition and function.", "link": ""},
+        {"number": 17, "title": "Microbiome and circadian rhythms", "theme": "General Microbiome", "description": "Exploring the circadian patterns in microbiota composition and function.", "link": ""},
+        {"number": 16, "title": "Microbiome and seasonal variation", "theme": "General Microbiome", "description": "Understanding seasonal changes in microbiome composition.", "link": ""},
+        {"number": 15, "title": "Microbiome and geographic variation", "theme": "General Microbiome", "description": "Exploring geographic differences in microbiome composition.", "link": ""},
+        {"number": 14, "title": "Microbiome and cultural practices", "theme": "General Microbiome", "description": "Understanding how cultural and lifestyle practices shape microbiota.", "link": ""},
+        {"number": 13, "title": "Microbiome and hygiene hypothesis", "theme": "General Microbiome", "description": "Exploring the hygiene hypothesis and its implications for microbiome health.", "link": ""},
+        {"number": 12, "title": "Microbiome and early life colonization", "theme": "Perinatal Health", "description": "Understanding microbial colonization during birth and early infancy.", "link": ""},
+        {"number": 11, "title": "Microbiome and breast milk", "theme": "Perinatal Health", "description": "Exploring the role of breast milk in infant microbiome development.", "link": ""},
+        {"number": 10, "title": "Microbiome and infant formula", "theme": "Perinatal Health", "description": "Understanding how infant formula affects microbiome development.", "link": ""},
+        {"number": 9, "title": "Microbiome and weaning", "theme": "Perinatal Health", "description": "Exploring microbiome changes during introduction of solid foods.", "link": ""},
+        {"number": 8, "title": "Microbiome and childhood development", "theme": "General Microbiome", "description": "Understanding microbiota's role in childhood growth and development.", "link": ""},
+        {"number": 7, "title": "Microbiome and adolescence", "theme": "General Microbiome", "description": "Exploring microbiome changes during adolescent development.", "link": ""},
+        {"number": 6, "title": "Microbiome and aging", "theme": "Aging", "description": "Understanding how microbiota change with age and contribute to aging.", "link": ""},
+        {"number": 5, "title": "Microbiome and longevity", "theme": "Aging", "description": "Exploring the relationship between microbiota composition and lifespan.", "link": ""},
+        {"number": 4, "title": "Microbiome and sex differences", "theme": "General Microbiome", "description": "Understanding sex-based differences in microbiome composition and function.", "link": ""},
+        {"number": 3, "title": "Microbiome and gender", "theme": "General Microbiome", "description": "Exploring how gender influences microbiota composition.", "link": ""},
+        {"number": 2, "title": "Microbiome and human health", "theme": "General Microbiome", "description": "Introduction to the microbiome and its fundamental role in human health and disease.", "link": ""},
+        {"number": 1, "title": "How about some musings on Microbiome every Monday?", "theme": "General Microbiome", "description": "The beginning of the Microbiome Mondays series - exploring the fascinating world of microorganisms living in, on, and around us.", "link": ""}
+    ],
+
+    creativePursuits: [
+        {"id": 1, "title": "Microbiome Mondays", "type": "Science Communication Series", "platform": "LinkedIn", "description": "100-episode science communication series spanning 2 years, covering microbiome science, human health, and the role of microorganisms in various diseases and conditions.", "stats": "700+ pages of content", "link": "https://www.linkedin.com/in/snagpal/", "award": "Best Science Communicator Award 2024"},
+        {"id": 2, "title": "Medium Articles", "type": "Technical & Philosophical essays", "platform": "Medium", "description": "Articles expressing my thoughts on science, AI and Humanity. ", "stats": "Few published pieces, ongoing effort", "link": "https://medium.com/@snagpal", "topics": ["Humans & AI", "Human effort", "Societal chaos"]},
+        {"id": 3, "title": "Fyndinglife Content", "type": "Creative Writing & Essays", "platform": "Fyndinglife", "description": "Essays and creative writing exploring the intersection of life, creativity, human experience and purpose. Philosophical elements abundant here.", "stats": "Ongoing contributions", "link": "https://www.fyndinglife.com", "topics": ["Purpose", "Motivation", "Philosophy", "Trust", "Grief"]},
+        {"id": 4, "title": "Graphic Design & Illustration", "type": "Visual Communication", "platform": "Portfolio", "description": "Scientific illustrations and graphic designs using Inkscape, GIMP, Illustrator, and Canva. Visual representation of complex biological concepts.", "tools": ["Inkscape", "GIMP", "Adobe Illustrator", "Canva"], "topics": ["Scientific Visualization", "Infographics", "Data Visualization"]},
+        {"id": 5, "title": "Web Design & Development", "type": "Technical & Creative", "platform": "Portfolio", "description": "Custom web applications and interactive visualizations for scientific data. Combining design aesthetics with functional data presentation.", "technologies": ["HTML", "CSS", "JavaScript", "D3.js", "Plotly.js"], "topics": ["Data Visualization", "Web Development", "Interactive Design"]}
+    ],
+
+    toolsProjects: [
+        {"id": 1, "name": "Vikodak", "type": "Tool", "status": "Published", "description": "Modular framework for inferring functional potential of microbial communities from 16S metagenomic datasets. Pioneering work in functional prediction.", "year": "2016", "publication": "PLOS ONE", "impact": "Foundational tool for microbiome functional analysis", "technologies": ["Python", "Metagenomics", "Pathway Analysis"], "link": "https://doi.org/10.1371/journal.pone.0148347"},
+        {"id": 2, "name": "iVikodak", "type": "Tool", "status": "Published", "description": "Advanced platform for inferring, analyzing, comparing, and visualizing the functional potential of microbial communities. Enhanced version with visualization capabilities.", "year": "2019", "publication": "Frontiers in Microbiology", "impact": "Widely adopted for microbiome function prediction", "technologies": ["Python", "Web Application", "Visualization"], "link": "https://doi.org/10.3389/fmicb.2018.03336"},
+        {"id": 3, "name": "MetagenoNets", "type": "Tool", "status": "Published", "description": "Comprehensive inference and meta-insights for microbial correlation networks. Enables understanding of microbial social networks.", "year": "2020", "publication": "Nucleic Acids Research", "impact": "Key tool for network biology in microbiome research", "technologies": ["Python", "Network Analysis", "Graph Theory"], "link": "https://doi.org/10.1093/nar/gkaa254"},
+        {"id": 4, "name": "NetConfer", "type": "Tool", "status": "Published", "description": "Web application for comparative analysis of multiple biological networks. Enables intuitive comparison of network structures.", "year": "2020", "publication": "BMC Biology", "impact": "Essential tool for network comparison studies", "technologies": ["Web Application", "Network Analysis", "Visualization"], "link": "https://doi.org/10.1186/s12915-020-00781-9"},
+        {"id": 5, "name": "NetSets.js", "type": "Tool", "status": "Published", "description": "JavaScript framework for compositional assessment and comparison of biological networks through Venn-integrated network diagrams.", "year": "2021", "publication": "Bioinformatics", "impact": "Innovative visualization approach for network comparison", "technologies": ["JavaScript", "D3.js", "Network Visualization"], "link": "https://doi.org/10.1093/bioinformatics/btaa723"},
+        {"id": 6, "name": "EnsembleSeq", "type": "Tool", "status": "Published", "description": "Novel end-to-end workflow enabling real-time, rapid and simultaneous multi-kingdom amplicon sequencing for holistic microbiome research at scale.", "year": "2024", "publication": "Microbiology Spectrum", "impact": "First of its kind multi-kingdom sequencing workflow", "technologies": ["Oxford Nanopore", "Long-read Sequencing", "Real-time Analysis"], "link": "https://doi.org/10.1128/spectrum.04150-23"},
+        {"id": 7, "name": "ENRICH", "type": "Platform", "status": "Proprietary", "description": "Explainable and domain-informed machine learning algorithm for pitfall-free biomarker discovery. Foundation for multiple patented technologies.", "year": "2018-ongoing", "organization": "TCS Research", "impact": "Basis for 6+ patent applications in early risk assessment", "technologies": ["Machine Learning", "Explainable AI", "Biomarker Discovery"], "applications": ["Autism Risk Assessment", "Preterm Birth Prediction", "Cancer Risk Assessment"]},
+        {"id": 8, "name": "MarkerML", "type": "Platform", "status": "Published & Open-sourced", "description": "Interpretable machine learning algorithm and tool for metagenomic biomarker discovery. Respects compositionality and confounder limitations.", "year": "2022", "publication": "Journal of Molecular Biology", "impact": "First tool addressing pitfalls in metagenomics biomarker discovery", "technologies": ["Machine Learning", "Metagenomics", "Explainable AI"], "link": "https://doi.org/10.1016/j.jmb.2022.167589"},
+        {"id": 9, "name": "Bioprospecting Platform", "type": "Platform", "status": "Proprietary & Award-winning", "description": "Multi-modal integration platform combining Genomics, Proteomics, Cheminformatics and Metabolic modelling for discovery of pathways, microorganisms and metabolites.", "year": "2020-ongoing", "organization": "TCS Research", "award": "CII 4R Awards 2025 (Runner-up)", "impact": "Award-winning innovation for sustainable bioremediation", "technologies": ["Genomics", "Proteomics", "Cheminformatics", "Metabolic Modeling"]},
+        {"id": 10, "name": "Tumor-Microbe Relationship Simulator", "type": "Research Framework", "status": "Patent Pending", "description": "Novel framework for understanding tumor-microbe relationships through emergent competition under environmental insults. Applies evolutionary game theory.", "year": "2019-ongoing", "organization": "TCS Research", "impact": "3 patent-pending simulators of metabolic agility", "technologies": ["Evolutionary Game Theory", "Metabolic Modeling", "Network Analysis"]}
+    ],
+
+    awards: [
+        {"year": "2025", "title": "CII 4R Awards, Runner up (Team award)", "organization": "Confederation of Indian Industry", "category": "Innovation", "description": "For the bioremediation platform that informs microbial cocktails for accelerated pollutant degradation, standing out among 200+ submissions nationwide."},
+        {"year": "2025", "title": "Honorary Evaluator, Smart India Hackathon (SIH) 2025", "organization": "AICTE, MoE Innovation Cell (Govt. of India)", "category": "Thought Leadership", "description": "For evaluating 100+ teams during the SIH"},
+        {"year": "2025", "title": "Honorary Mentor & Jury, TCS AI Hackathon 2025", "organization": "Tata Consultancy Services Ltd., India", "category": "Thought Leadership", "description": "For mentoring and judging 25+ inventors during TCS AI Hackathon"},
+        {"year": "2024", "title": "Best Science Communicator Award 2024", "organization": "CSIR IGIB, India", "category": "Thought Leadership", "description": "For multi-year community outreach in Microbiome Science and the 100-episode MicrobiomeMondays social media informational series"},
+        {"year": "2023", "title": "Gold Mentor Award 2023", "organization": "Tata Consultancy Services Ltd., India", "category": "Thought Leadership", "description": "For mentoring 25+ associates in Data Science without borders (globally) throughout TCS"},
+        {"year": "2023", "title": "Keynote Speaker 2023", "organization": "NIH-USA and DBT Govt. of India, for AMRH 2023", "category": "Thought Leadership", "description": "For presenting function prediction work in microbial genomics"},
+        {"year": "2021", "title": "Bertelsmann Technology Fellowship 2021", "organization": "Bertelsmann and Udacity", "category": "Innovation", "description": "Towards the award of Nanodegree in AI Product Management"},
+        {"year": "2020", "title": "TCS Young Scientist Award 2020", "organization": "Tata Consultancy Services Ltd., India", "category": "Scientific Excellence", "description": "For exemplary early career research. Awarded to 1-2 Scientists per year across TCS. Evaluated by jury from Industry (Tata group) and Academia (Stanford University)"},
+        {"year": "2019", "title": "Best Poster Presentation Award, 2019", "organization": "International Conference of Microbiome Research (ICMR) 2019, National Centre for Cell Science (NCCS), Pune, India", "category": "Scientific Excellence", "description": "For presenting the framework for predicting functional potential of microbiomes"},
+        {"year": "2018", "title": "Tata Innovista Award 2018 (Team award)", "organization": "Tata Group., India", "category": "Innovation", "description": "For building the prototype technology for microbiome based early risk assessment of Preterm birth in pregnant women and colorectal cancer in adults."},
+        {"year": "2017", "title": "TCS Innovista Award 2017 (Team award)", "organization": "Tata Consultancy Services Ltd., India", "category": "Innovation", "description": "For building the prototype technology for microbiome based early risk assessment of Preterm birth in pregnant women and colorectal cancer in adults."},
+        {"year": "2011", "title": "Gold Medal, B.Tech (H) Biotech (2011)", "organization": "School of Bioscience, LPU, Punjab, India", "category": "Scientific Excellence", "description": "For outstanding academic achievement in Biotechnology"},
+        {"year": "2010", "title": "CSIR UGC NET (LS) – AIR 88", "organization": "CSIR and UGC", "category": "Scientific Excellence", "description": "All India Rank 88 in CSIR-UGC NET examination"},
+        {"year": "2010", "title": "GATE 2010 - All India Rank 44", "organization": "Ministry of Human Resource Development, India", "category": "Scientific Excellence", "description": "Graduate Aptitude Test in Engineering (GATE 2010-11) - All India Rank 44"},
+        {"year": "2011", "title": "DBT JRF Award 2011, List B", "organization": "DBT, Govt of India", "category": "Scientific Excellence", "description": "Department of Biotechnology Junior Research Fellowship Award"}
+    ],
+
+    testimonials: [
+        {"quote": "Sunil is among the most intelligent and exceptional students I have taught for over a decade. He possesses a curious and creative mind. His assignments presented unique and innovative solutions to design problems. As a student, he was always punctual, attentive, and prompt to answer any open or closed questions. He was among my first batch of students and helped me evolve as a teacher with his thought-provoking and challenging questions. To my astonishment, he chose to address an environmental concern in a project expo at the undergraduate level. I believe these qualities will help him excel as a scientist, and I wish him great success in all his future endeavors.", "author": "Dr. Nishtha Pandey", "role": "Teacher; Scientist", "affiliation": "Lovely Professional University; TCS Research"},
+        {"quote": "When it comes to define Sunil as a person, it makes me really confused how to actually testify him on one single thing. Given how diverse a human being he is, I can only see him as an artist. I have known him for almost 7 years now and also worked with him on several projects. The sheer amount of passion he puts into any work is itself a motivation for other team members. Sunil is an excellent learner and a true living definition of what 'agile' means in the software industry. His educational record is another testament of his diligence. In short, the one thing that matters most as a colleague, Sunil is just that.... a true friend and gem of a human being", "author": "Dr. Kuntal Bhusan", "role": "Colleague, Senior Scientist", "affiliation": "TCS Research"},
+        {"quote": "I was Sunil's MS(Research) project lead and thesis supervisor at IIT Delhi, India. Having mentored hundreds of students during my decades of long association with Indian academia, I fondly remember Sunil for his never ending zeal to learn new things and accept challenges. One of his initial tasks was to maintain the callus cultures of Azadirachta indica (Neem) in my plant tissue culture lab and despite being completely new to the field, Sunil did a commendable job of not only maintaining the cultures but also completing a master's project on scale up of the A.indica suspension culture. Importantly, he took no time in gelling with the members of the lab and become a part of my research family at IIT Delhi, which speaks volumes of his social skills. And it probably comes out of his social skills that he likes to present his work through interesting story building (something I personally like to do as well). I am proud that my student is doing great in his career as a research scientist and I wish him more success and learning experiences going forward", "author": "Dr. Ashok K Srivastava", "role": "MSR Thesis Supervisor, Retd. Professor Biochemical Engineering", "affiliation": "IIT Delhi,India"},
+        {"quote": "I have known Sunil since we both were ungraduated students. Sunil is one of the most committed, caring, reliable, and adept people I have ever known. He always stood out as one of the most creative-minded persons in our class, and his approach to solving a problem has always amazed me. In addition to this, his excellent core skills of biotechnique methods, understanding of problems, and innovative solutions to address real-world problems were unmatched amongst his peers.", "author": "Dr. Sandhya Sharma", "role": "Studied together (B.Tech); Associate Scientist", "affiliation": "Gateway Institute for Brain Research, Florida"},
+        {"quote": "Sunil is an extremely hard working professional and believes in continuously learning and adding new skills to his kitty while parallelly applying the gained knowledge in practical research scenarios. I have worked with Sunil on several research projects. He is a very approachable colleague, exceptionally talented and a great team player. He is highly result oriented and takes up work responsibilities proactively. It has been a pleasure working with him in the process of learning, brainstorming and exchanging new ideas. I wish him all the best in all his future endeavors", "author": "Ms. Rashmi Singh", "role": "Colleague; Lead Engineer", "affiliation": "John Deere, Pune, India"}
+    ],
+    
+    bio: {
+        summary: "Senior Scientist at TCS Research with 12+ years of experience in computational biology, multiomics, clinical data science and machine learning. PhD in Science (Computational Biology, Clinical Microbiomics & ML) from CSIR-IGIB with expertise in network analysis, biomarker discovery, and genomic data science. Passionate about bridging computational methods with clinical applications and science communication.",
+        
+        education: [
+            {
+                degree: "PhD",
+                field: "Computational Biology, Clinical Microbiomics & ML",
+                institution: "CSIR-Institute of Genomics and Integrative Biology (CSIR-IGIB)",
+                location: "New Delhi, India",
+                year: "2020-2025",
+                gpa: "9.4/10",
+                thesis: "Toward microbiome based understanding of upper gut health. Entailed oxford nanopore sequencing for metataxonomic survey across gut biogeography, followed by integrative modeling of metagenomic, biochemical & clinical data",
+                supervisors: ["Dr. Bhupesh Taneja", "Dr. Sharmila S. Mande"]
+            },
+            {
+                degree: "Master of Research",
+                field: "Biochemical Engineering",
+                institution: "Indian Institute of Technology (IIT)",
+                location: "Delhi, India",
+                year: "2013",
+                gpa: "9.13/10"
+            },
+            {
+                degree: "Bachelor of Technology (Hons)",
+                field: "Biotechnology",
+                institution: "Lovely Professional University",
+                location: "Punjab, India",
+                year: "2011",
+                gpa: "9.85/10"
+            }
+        ],
+        
+        experience: [
+            {
+                title: "Senior Scientist, PI",
+                company: "TCS Research",
+                location: "Pune, India",
+                period: "2024 - Present",
+                department: "Life Science R&D, Digital health & personalised medicine (DHPM)",
+                highlights: [
+                    "Leading research in biomarker discovery, clinical data science and systems biology for One Health goals",
+                    "Developing machine learning frameworks for metagenomic & biomolecular data analysis",
+                    "Mentoring junior scientists in computational biology",
+                    "Client management in Pharmaceutical, Consumer health and Energy space",
+                    "Research stewardship"
+                ]
+            },
+            {
+                title: "Research Scientist, PI",
+                company: "TCS Research",
+                location: "Delhi, India",
+                period: "2020 - 2024",
+                department: "Life Science R&D, DHPM",
+                highlights: [
+                    "Conducted research on microbe-disease associations across multiple disease areas",
+                    "Developed computational tools for network analysis and disease risk assessment",
+                    "Collaborated with clinical teams on biomarker validation studies"
+                ]
+            },
+            {
+                title: "Scientist; Researcher",
+                company: "TCS Research",
+                location: "Pune, India",
+                period: "2017 - 2020; 2013 - 2017",
+                specialization: "Life Science R&D, DHPM",
+                highlights: [
+                    "Developed Vikodak framework for function prediction in microbial communities ",
+                    "Metagenomic, genomic and proteomic pipeline orchestration",
+                    "Conducted metagenomics analysis and microbiome research",
+                    "Published foundational work in metagenomic bioinformatics"
+                ]
+            }
+        ],
+        
+        specializations: [
+            "Computational Biology & Bioinformatics",
+            "Microbiome Science & Analysis",
+            "Machine Learning & Data Science",
+            "Network Analysis & Graph Theory",
+            "Biomarker Discovery & Validation",
+            "Metagenomics & Genomics",
+            "Science Communication & Science Writing",
+            "Web Development & Data Visualization"
+        ],
+        
+        skills: {
+            technical: [
+                "Machine Learning, Deep learning",
+                "Data Science, Biostatistical Analysis",
+                "Computational Biology, Genomics",
+                "Programming (Python, R, Perl, JavaScript, Bash)",
+                "Cloud Platforms (AWS, GCP), Docker/Podman, Linux, Git, Slurm",
+                "Data Visualization (D3.js, Plotly, Matplotlib)"
+            ],
+            leadership: [
+                "R&D stewardship",
+                "Team leadership",
+                "Project management",
+                "Mentoring & Training",
+                "Cross-functional collaboration",
+                "Scientific outreach"
+            ],
+            creative: [
+                "Science communication",
+                "Philosophical writing",
+                "Graphic design",
+                "Data storytelling",
+                "Creative problem solving"
+            ]
+        }
+    }
+};

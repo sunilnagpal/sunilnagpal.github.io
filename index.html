@@ -17,7 +17,14 @@
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+        <script>
+        // Generate a unique timestamp (Unix epoch time in milliseconds)
+        var cacheBuster = new Date().getTime(); 
+        
+        // Use document.write to inject the script tag into the HTML
+        document.write('<link rel="stylesheet" href="styles.css?v=' + cacheBuster + '">');
+
+    </script>
 </head>
 <body>
     <div id="app">

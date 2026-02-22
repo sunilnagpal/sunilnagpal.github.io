@@ -9,7 +9,7 @@ const portfolioData = {
             "journal": "Briefings in Bioinformatics",
             "year": "2026",
             "doi": "https://doi.org/10.1093/bib/bbag108",
-            "abstract": "The paper discusses the paradox of feature complexity in biological data/system modelling and recommends to follow a 'Reasonable AI' approach, starting from simple, interpretable feature space, before adopting complex, large language models.",
+            "abstract": "The paper discusses the paradox of feature complexity in biological data/system modelling and recommends to follow a Reasonable AI approach, starting from simple, interpretable feature space, before adopting complex, large language models.",
             "keywords": ["biological data science", "cancer", "integrated modeling", "feature complexity paradox"],
             "bodysite": "Antibody drug conjugates",
             "technologies": ["machine learning", "cheminformatics", "biological feature embeddings", "generative AI"],

@@ -21,7 +21,7 @@ function initNetworkBackground() {
     canvas.height = window.innerHeight;
     
     const particles = [];
-    const particleCount = 60;
+    const particleCount = 40;
     
     class Particle {
         constructor() {
@@ -29,7 +29,7 @@ function initNetworkBackground() {
             this.y = Math.random() * canvas.height;
             this.vx = (Math.random() - 0.5) * 0.3;
             this.vy = (Math.random() - 0.5) * 0.3;
-            this.radius = Math.random() * 1 + 0.4;
+            this.radius = Math.random() * 1 + 0.5;
             this.opacity = Math.random() * 0.2 + 0.1;
         }
         
@@ -62,8 +62,8 @@ function initNetworkBackground() {
                 const dy = particles[i].y - particles[j].y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
                 
-                if (distance < 300) {
-                    ctx.strokeStyle = `rgba(150, 150, 150, ${0.05 * (1 - distance / 250)})`;
+                if (distance < 600) {
+                    ctx.strokeStyle = `rgba(150, 150, 150, ${0.05 * (1 - distance / 350)})`;
                     ctx.lineWidth = 0.1;
                     ctx.beginPath();
                     ctx.moveTo(particles[i].x, particles[i].y);

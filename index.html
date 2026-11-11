@@ -1,323 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunil Nagpal - Computational Biologist </title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- SweetAlert2 -->
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-        <script>
-        // Generate a unique timestamp (Unix epoch time in milliseconds)
-        var cacheBuster = new Date().getTime(); 
-        
-        // Use document.write to inject the script tag into the HTML
-        document.write('<link rel="stylesheet" href="styles.css?v=' + cacheBuster + '">');
-
-    </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunil Nagpal | Scientist, Molecules x Microbes x Biology x Artifical Intelligence </title>
+  <meta name="description" content="I'm a Senior Scientist and Principal Investigator at Tata Research Development and Design Centre, working across (meta)genomics, machine learning, and hands-on experimental biology." />
+  <meta name="keywords" content="Sunil Nagpal, microbiome, metagenomics, computational biology, clinical data science, machine learning, digital twins" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sunil Nagpal | Scientist, Molecules x Microbes x Biology x Artifical Intelligence" />
+  <meta property="og:description" content="Interested in microbial worlds, models, human and environmental health, and the people who move/can move the needle." />
+  <meta property="og:image" content="/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="app">
-        <!-- Navigation -->
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top navbar-transparent">
-            <div class="container-lg">
-                <span class="navbar-brand" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.1rem; color: #1a1a1a;">
-                    Sunil Nagpal, PhD
-                </span>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('home'); return false;">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('publications'); return false;">Publications</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('episodes'); return false;">Microbiome Mondays</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('awards'); return false;">Awards</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('testimonials'); return false;">Testimonials</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('creative'); return false;">Creative Pursuits</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('tools'); return false;">Tools</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="navigateTo('bio'); return false;">Bio</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Sunil Nagpal home"><span>SN</span><b>Sunil Nagpal</b></a>
+    <div class="header-tools"><label class="theme-picker"><span>Theme</span><select id="theme-select" aria-label="Choose colour theme"><option value="current">Default</option><option value="moss">Moss</option><option value="clay">Clay</option><option value="night">Night</option></select></label><button class="sidebar-toggle" id="sidebar-toggle" type="button" aria-controls="side-menu" aria-expanded="true">Menu <span>☰</span></button></div>
+  </header>
+  <aside class="side-menu" id="side-menu" aria-label="Site menu">
+    <div class="side-menu-head"><span>Contents</span><button id="sidebar-close" type="button" aria-label="Hide site menu">×</button></div>
+    <nav class="side-nav"><a href="#about"><span>01</span>About me</a><a href="#page/publications"><span>02</span>Publications</a><a href="#page/patents"><span>03</span>Patents</a><a href="#page/teaching"><span>04</span>Teaching</a><a href="#page/csr"><span>05</span>CSR</a><a href="#page/recognitions"><span>06</span>Recognitions</a><a href="#page/outreach"><span>07</span>Science outreach</a><a href="#page/creative"><span>08</span>Creative writing</a><a href="#page/news"><span>09</span>News</a></nav>
+    <div class="side-menu-foot"><span>Sense· Model· Translate</span><a href="mailto:nagpal.sun@gmail.com">Contact</a></div>
+  </aside>
 
-        <!-- Canvas for Animated Network Background -->
-        <canvas id="networkCanvas" class="network-background"></canvas>
+  <main id="main">
+    <section class="hero section-pad" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Molecules x Microbes x Biology x AI</p>
+        <h1 id="hero-title">Encoding & Decoding Biology of molecules, microbes, and health.</h1>
+        <p class="hero-lede">I'm a Scientist working at the meeting point of artificial intelligence, (meta)genomics, molecular representations and models for human & environmental health.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#work">Selected work <span>↘</span></a><a class="text-link" href="mailto:nagpal.sun@gmail.com">Start a conversation <span>↗</span></a></div>
+      </div>
+      <div class="hero-aside">
+        <div class="portrait-frame"><img src="profile.jpg" alt="Portrait of Sunil Nagpal" /></div>
+        <p class="margin-note">Pune, India<br /><span>Working @ Tata Research Development and Design Centre</span></p>
+      </div>
+      <div class="hero-foot"><span>01 / 04</span><span class="line"></span><span></span></div>
+    </section>
 
-        <!-- Main Content -->
-        <div id="content-container">
-            <!-- HOME PAGE -->
-            <section id="homePage" class="page" style="display: block;">
-                <div class="hero-section">
-                    <div class="container-lg">
-                        <div class="hero-content">
-                            <!-- Profile Image - CENTERED -->
-                            <div class="profile-image-container">
-                                <img src="profile-greyscale_new.jpg" alt="Sunil Nagpal" class="profile-image">
-                                <div class="profile-underline"></div>
-                            </div>
+    <section class="manifesto section-pad" id="work" aria-labelledby="manifesto-title">
+      <div class="section-kicker"><span>01</span><span>Working philosophy</span></div>
+      <div class="manifesto-grid">
+        <div><h2 id="manifesto-title"></h2><p class="display-copy">Sensing. Modeling. Translating.</p></div>
+        <div class="manifesto-note"><p>Over the last decade and half, having worked across biological scales, and, along the way learning from stalwarts, I have imbibed the working philosophy of  <strong>sensing </strong> by gathering meaningful data, <strong>modeling</strong> to build methods, tools and digital twins, for <strong>translating</strong> into decisions, therapies, education, or a next better question.</p><p>This has required staying comfortable in both the wet lab and the dry lab, and making space for clinicians, engineers, students, and collaborators to shape the work.</p></div>
+      </div>
+      <!--div class="pillars">
+        <article class="pillar"><span class="pillar-no">01</span><h3>Sense it</h3><p>Clinical cohorts, multi-omics, long-read assays, ecological context, and the patience to ask whether the sample actually represents the system.</p><span class="pillar-mark">◌</span></article>
+        <article class="pillar pillar-featured"><span class="pillar-no">02</span><h3>Model it</h3><p>Microbiome representation learning, genome-scale metabolic models, graph theory, NLP, and machine learning that remains interpretable enough to be questioned.</p><span class="pillar-mark">⌁</span></article>
+        <article class="pillar"><span class="pillar-no">03</span><h3>Translate it</h3><p>Biomarkers, diagnostics, bioprospecting platforms, scientific writing, mentoring, and tools that help an idea travel beyond the original experiment.</p><span class="pillar-mark">↗</span></article>
+      </div-->
+    </section>
 
-                            <!-- Tagline -->
-                            <p class="tagline">Hello! I'm</p>
+    <section class="featured section-pad" aria-labelledby="featured-title">
+      <div class="section-kicker"><span>02</span><span>Selected work</span></div>
+      <div class="section-heading"><h2 id="featured-title">A sample of recent work.</h2><a class="text-link" href="#research">View research index <span>↗</span></a></div>
+      <div class="work-list">
+        <article class="work-row work-row-dark"><div class="work-index">01</div><div><p class="work-tag">Microbiome representation learning</p><h3>GraMMar</h3><p>A microbiome foundation model trained on 2.2 million metagenomic count samples, with a transformer architecture designed to hold microbial evolution, function, and ecological context in the same representation.</p></div><div class="work-meta">2026<br /><span>AI × microbiome</span></div></article>
+        <article class="work-row"><div class="work-index">02</div><div><p class="work-tag">Hands-on sequencing workflow</p><h3>EnsembleSeq</h3><p>A multi-kingdom wet-lab and computational workflow for real-time, simultaneous profiling of bacteriome and mycobiome dynamics using long-read amplicon sequencing.</p></div><div class="work-meta">2024<br /><span>Wet lab × dry lab</span></div></article>
+        <article class="work-row"><div class="work-index">03</div><div><p class="work-tag">Clinical data science</p><h3>Clinical research</h3><p>Prospective work across women’s health, perinatal health, leprosy, vitiligo, and dyspepsia, integrating clinical, metagenomic, metabolomic, and biochemical data.</p></div><div class="work-meta">Ongoing<br /><span>Health × evidence</span></div></article>
+      </div>
+    </section>
 
-                            <!-- Name -->
-                            <h1 class="hero-name">Sunil Nagpal</h1>
+    <section class="research section-pad" id="research" aria-labelledby="research-title">
+      <div class="section-kicker"><span>03</span><span>Research index</span></div>
+      <div class="research-intro"><h2 id="research-title">Areas of work.</h2><p>My work has moved between microbial communities, human health, industrial biology, and learning the language of biological data. Encoding and Decoding the biological world is perhaps the best summarisation of my broader interest.</p></div>
+      <div class="research-grid">
+        <article><span>01</span><h3>Microbiome & host health</h3><p>Upper-gut health, dyspepsia, women’s health, bacterial vaginosis, perinatal health, skin microbiomes, and disease-associated dysbiosis.</p></article>
+        <article><span>02</span><h3>Methods & representations</h3><p>Microbiome and molecular foundation models, cellular function simulation, biological network inference, and explainable modeling and machine learning.</p></article>
+        <article><span>03</span><h3>Environment & One Health</h3><p>Microbial ecology, metabolic agility, nutrient-resilient probiotics, bioremediation, and the relationships linking microbes, environments, and health.</p></article>
+        <article><span>04</span><h3>Biological Data Science</h3><p>Genomic NLP, clinical data integration, biomarker discovery, cheminformatics, reproducible workflows, and tools that make evidence easier to inspect and use.</p></article>
+      </div>
+    </section>
 
-                            <!-- Divider -->
-                            <div class="divider"></div>
+    <!-- section class="numbers section-pad" aria-label="Selected numbers"><div><strong>12+</strong><span>years at TCS Research</span></div><div><strong>19</strong><span>research publications</span></div><div><strong>100</strong><span>Microbiome Mondays</span></div><div><strong>7</strong><span>prospective clinical studies</span></div></section-->
 
-                            <!-- Professional Info -->
-                            <div class="professional-info">
-                                <div class="info-item">
-                                    <div class="info-icon">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path>
-                                            <circle cx="4" cy="4" r="2"></circle>
-                                        </svg>
-                                    </div>
-                                    <div class="info-text">
-                                        <p class="info-title">Senior Scientist</p>
-                                        <p class="info-subtitle">Life Science R&D</p>
-                                    </div>
-                                </div>
+    <section class="archive section-pad home-hidden" id="microbiome-mondays" aria-labelledby="archive-title">
+      <div class="section-kicker"><span>04</span><span>Microbiome Mondays</span></div>
+      <div class="archive-top"><div><p class="eyebrow">A public notebook in 100 parts</p><h2 id="archive-title">Microbiome Mondays.</h2></div><p>Microbiome Mondays began as a weekly act of curiosity and became a living body of science communication: 100 posts moving from first principles to biomarkers, machine learning, ageing, the gut, skin, immunity, and the possibility of an LLM trained on the whole journey.</p></div>
+      <div class="archive-tools"><label class="search-box"><span>⌕</span><input id="episode-search" type="search" placeholder="Search episodes, themes, ideas…" aria-label="Search Microbiome Mondays" /></label><div id="theme-filters" class="filter-row" aria-label="Filter episodes by theme"></div></div>
+      <div id="episode-count" class="archive-count"></div><div id="episode-grid" class="episode-grid"></div><button class="button button-outline load-more" id="load-more" type="button">Load more episodes <span>↓</span></button>
+    </section>
 
-                                <div class="info-item">
-                                    <div class="info-icon">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                            <polyline points="22,6 12,13 2,6"></polyline>
-                                        </svg>
-                                    </div>
-                                    <div class="info-text">
-                                        <p class="info-title">nagpal.sun[at]gmail.com</p>
-                                        <p class="info-subtitle">Working @ TCS Research</p>
-                                    </div>
-                                </div>
-                            </div>
+    <section class="profile section-pad" id="about" aria-labelledby="about-title">
+      <div class="section-kicker"><span>05</span><span>Profile</span></div>
+      <div class="profile-copy"><p>I am a Senior Scientist and Principal Investigator at Tata Research Development and Design Centre of TCS Research. I joined TCS Research in 2013 and have grown from researcher to scientific lead while remaining hands-on with experiments, data, models, writing, and of course the diversity of people around the work we do.</p><p>My PhD at CSIR-IGIB focused on upper-gut health through metagenomic, clinical health-record, and biochemical data integration. I also serve as Guest Faculty at IIT Delhi and Courtesy Faculty at Florida A&M University.</p><div class="profile-links"><a href="#page/publications">Publications ↘</a><a href="#page/patents">Patents ↘</a><a href="#page/recognitions">Recognitions ↘</a><a href="#page/creative">Writing ↘</a></div></div></div>
+      <div class="career-strip" aria-label="Career timeline"><div><b>2013</b><span>Researcher</span></div><div><b>2017</b><span>Scientist</span></div><div><b>2020</b><span>Scientist & PhD Fellow</span></div><div><b>2024–present</b><span>Senior Scientist & PI</span></div></div>
+    </section>
 
-                            <!-- Specialties -->
-                            <div class="specialties">
-                                <p>Computational Biology & Graph theory</p>
-                                <p>Machine Learning & Multiomics</p>
-                                <p style="text-align: justify;">Hold <b>12+ years</b> of experience in driving <b>computational and experimental biology research, development & innovation</b>. ‘One Health' through discovery and modeling of microbes, molecules and life course trajectories. Navigate complex problems and RDI pipelines at the interface of <b>multiomics and clinical data science</b>. Special interest in biochemistry inspired NLP (genomic, biochemical language models), microbial social communication and tumor microbiome. <b>Social and collaborative mindset</b>. Appreciate artistic expression of science.</p>
-                            </div>
+    <section class="publications section-pad home-hidden" id="publications" aria-labelledby="publications-title"><div class="section-kicker"><span>06</span><span>Selected publications</span></div><div class="section-heading"><h2 id="publications-title">Papers, platforms, and questions.</h2><a class="text-link" href="https://orcid.org/0000-0001-9221-1443" target="_blank" rel="noreferrer">ORCID profile <span>↗</span></a></div><div id="publication-list" class="publication-list"></div></section>
 
-                            <!-- CTA Buttons -->
-                            <div class="cta-buttons">
-                                <!--button class="btn btn-sleek" onclick="navigateTo('publications')">
-                                    Explore My Work
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 8px;">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </button-->
-                                <!--button class="btn btn-sleek-outline">Download CV</button-->
-                            </div>
+    <section class="patents section-pad home-hidden" id="patents" aria-labelledby="patents-title"><div class="section-kicker"><span>06b</span><span>Selected inventions</span></div><div class="section-heading"><h2 id="patents-title">Selected patent work.</h2><p class="patent-note">Selected applications and grants from the academic application and CV.</p></div><div class="patent-grid"><article><span>01</span><h3>Joint language of microbiome evolution</h3><p>System and method for learning the joint language of microbiome evolution, ecological context, and metagenomic relationships. Indian application IN 202621072721.</p></article><article><span>02</span><h3>Environment embeddings for metagenomes</h3><p>System and method for encoding environment embeddings for metagenomes. Indian application IN 202621072719.</p></article><article><span>03</span><h3>High-context microbial search</h3><p>System and method for high-context search and retrieval of microbial communities. Indian application IN 202621072718.</p></article><article><span>04</span><h3>Frugal markers for biological samples</h3><p>Method and system for identifying and utilizing frugal markers for classification of biological samples. EPO grant application EP24153673.9A.</p></article></div></section>
 
-                            <!-- Social Links -->
-                            <div class="social-links">
-                                <a href="https://linkedin.com/in/snagpal" target="_blank" class="social-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                                    </svg>
-                                </a>
-                                <a href="https://medium.com/@nagpalsunil" target="_blank" class="social-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
-                                    </svg>
-                                </a>
-                                <a href="https://www.fyndinglife.com" target="_blank" class="social-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
-                                    </svg>
-                                </a>
-                                <a href="mailto:nagpal.sun@gmail.com" class="social-link">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="leadership section-pad home-hidden" id="leadership" aria-labelledby="leadership-title"><div class="section-kicker"><span>07</span><span>Leadership & stewardship</span></div><div class="leadership-grid"><div><h2 id="leadership-title">Leadership and service.</h2><p>Scientific leadership is partly about direction, and partly about making it easier for other people to do their best work.</p></div><div class="leadership-list"><div><span>01</span><p><strong>Team leadership</strong><br />Supporting a multidisciplinary team of scientists, data engineers, and UI developers across R&D projects and biomarker discovery pipelines.</p></div><div><span>02</span><p><strong>Open research governance</strong><br />Tribe Owner and initiator of the R&I Open Sourcing initiative at TCS Research, formalising a responsible open-sourcing framework with R&D, Legal, Governance, and Infrastructure teams.</p></div><div><span>03</span><p><strong>Mentoring & service</strong><br />TCS Golden Guru recognition for mentoring and jury work across AI hackathons and upskilling programmes; Guest Faculty and Courtesy Faculty roles supporting the next generation of scientists.</p></div></div></div></section>
 
-                <!-- Featured Collections -->
-                <section class="featured-collections">
-                    <div class="container-lg">
-                        <div class="section-header">
-                            <h2></h2>
-                            <p>My bit across different domains</p>
-                        </div>
+    <section class="writing section-pad" id="writing" aria-labelledby="writing-title"><div class="section-kicker"><span>08</span><span>Writing & other pursuits</span></div><div class="writing-grid"><div><h2 id="writing-title">Adjacent interests</h2><p>Beyond science, I find myself leaning a lot toward pondering and occassionally penning thoughts on the philosophy of living/purpose/absurdity, human behavior, AI x Human co-evolution and random observations around how (we) the humans conduct themselves across phases of life. Still an admirer of human authored "endangered pieces" and a massive fan of art and artists. <br>Oh, and, I travel quite a lot, often on my off-road bike. </p><div class="writing-actions"><a class="button button-dark" href="https://nagpalsunil.medium.com/" target="_blank" rel="noreferrer">Read on Medium <span>↗</span></a><a class="text-link" href="https://www.fyndinglife.com/" target="_blank" rel="noreferrer">Fyndinglife <span>↗</span></a></div></div><div class="essay-list"><a href="https://nagpalsunil.medium.com/are-machines-now-recursively-fine-tuning-humans-f8cd54605660" target="_blank" rel="noreferrer"><span>2025</span><strong>Are machines now (recursively) fine-tuning humans?</strong><i>↗</i></a><a href="https://nagpalsunil.medium.com/proof-of-being-human-50f5aa2f5a5a" target="_blank" rel="noreferrer"><span>2025</span><strong>Proof of being human</strong><i>↗</i></a><a href="https://nagpalsunil.medium.com/burden-of-responsibility-for-maximising-utility-fd5a4095ee93" target="_blank" rel="noreferrer"><span>2025</span><strong>Burden of Responsibility for Maximising Utility</strong><i>↗</i></a><a href="https://nagpalsunil.medium.com/the-encode-decode-paradox-6d5cdcfab989" target="_blank" rel="noreferrer"><span>2025</span><strong>The Encode-Decode paradox</strong><i>↗</i></a></div></div></section>
 
-                        <div class="featured-grid">
-                            <div class="collection-card" onclick="navigateTo('publications')">
-                                <div class="card-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                        <polyline points="14 2 14 8 20 8"></polyline>
-                                        <line x1="12" y1="13" x2="12" y2="17"></line>
-                                        <line x1="10" y1="15" x2="14" y2="15"></line>
-                                    </svg>
-                                </div>
-                                <h3>Publications</h3>
-                                <p>16 peer-reviewed research papers</p>
-                                <span class="arrow">→</span>
-                            </div>
+    <section class="home-samples section-pad" id="home-samples" aria-labelledby="home-samples-title"><div class="section-kicker"><span>06a</span><span>Selected work</span></div><div class="section-heading"><h2 id="home-samples-title">Selected publications and patents.</h2><a class="text-link" href="#page/publications">View all publications and patents <span>↗</span></a></div><div class="sample-grid"><div id="home-publication-sample" class="sample-column"></div><div id="home-patent-sample" class="sample-column"></div></div></section>
 
-                            <div class="collection-card" onclick="navigateTo('episodes')">
-                                <div class="card-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="5" r="2"></circle>
-                                        <circle cx="19" cy="12" r="2"></circle>
-                                        <circle cx="12" cy="19" r="2"></circle>
-                                        <circle cx="5" cy="12" r="2"></circle>
-                                        <line x1="12" y1="7" x2="12" y2="17"></line>
-                                        <line x1="7" y1="12" x2="17" y2="12"></line>
-                                    </svg>
-                                </div>
-                                <h3>Microbiome Mondays</h3>
-                                <p>100 episodes of science communication</p>
-                                <span class="arrow">→</span>
-                            </div>
+    <section class="glimpse section-pad" aria-labelledby="glimpse-title"><div class="section-kicker"><span>09</span><span>Other work</span></div><div class="glimpse-grid"><a href="#page/outreach"><span>Science outreach</span><strong>Microbiome Mondays, public notes, and conversations about living systems ↗</strong></a><a href="#page/creative"><span>Creative writing</span><strong>Essays on AI, responsibility, and the rest of the world ↗</strong></a><a href="#page/recognitions"><span>Recognitions</span><strong>A record of awards, mentoring, and service ↗</strong></a></div></section>
 
-                            <div class="collection-card" onclick="navigateTo('awards')">
-                                <div class="card-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M6 9c0-1 1-2 2-2h8c1 0 2 1 2 2v2h2c1 0 2 1 2 2v6c0 1-1 2-2 2H4c-1 0-2-1-2-2v-6c0-1 1-2 2-2h2V9z"></path>
-                                        <line x1="12" y1="15" x2="12" y2="20"></line>
-                                        <line x1="9" y1="20" x2="15" y2="20"></line>
-                                    </svg>
-                                </div>
-                                <h3>Awards & Recognition</h3>
-                                <p>15+ awards and honors</p>
-                                <span class="arrow">→</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <!-- PUBLICATIONS PAGE -->
-            <section id="publicationsPage" class="page" style="display: none;">
-                <div class="container-lg py-5">
-                    <h2>Publications</h2>
-                    <p class="section-subtitle">Peer-reviewed research papers</p>
-                    <div id="publicationsContainer" class="publications-grid"></div>
-                </div>
-            </section>
-
-            <!-- MICROBIOME MONDAYS PAGE -->
-            <section id="episodesPage" class="page" style="display: none;">
-                <div class="container-lg py-5">
-                    <h2>Microbiome Mondays</h2>
-                    <p class="section-subtitle">Microbes (little bugs) and their big data are my first love in scientific research since 2008. Trillions of these unicellular organisms thrive in one human adult. Earth in total harbors more microbes than the number of stars estimated in the universe. This micro-cosmos has been the source of drugs, diseases, food, polymers, supplements, fuel and countless other products that have shaped the advanced industrial age we currently live in. Their existence forces us to see every organism as an ecosystem. Through MicrobiomeMondays, an attempt was made to spread awareness about the story of these little bugs. Following are the 100 episodes of this science communication:</p>
-                    
-                    <div class="filter-section" style="display: flex; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
-                        <div style="flex: 1; min-width: 200px;">
-                            <input type="text" id="episodeSearch" class="form-control" placeholder="Search episodes..." onkeyup="searchEpisodes(this.value)" style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
-                        </div>
-                        <div style="flex: 1; min-width: 200px;">
-                            <label for="themeFilter" style="display: block; margin-bottom: 5px; font-weight: 500;">Filter by Theme:</label>
-                            <select id="themeFilter" class="form-select" onchange="filterEpisodesByTheme(this.value)" style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
-                                <option value="all">All Themes</option>
-                                <option value="LLMs & AI">LLMs & AI</option>
-                                <option value="Life & Death">Life & Death</option>
-                                <option value="Aging">Aging</option>
-                                <option value="Gut Health">Gut Health</option>
-                                <option value="Dermatology">Dermatology</option>
-                                <option value="Metabolic Health">Metabolic Health</option>
-                                <option value="Respiratory Health">Respiratory Health</option>
-                                <option value="Neurobiology">Neurobiology</option>
-                                <option value="Perinatal Health">Perinatal Health</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div id="episodesContainer" class="episodes-grid"></div>
-                </div>
-            </section>
-
-            <!-- AWARDS PAGE -->
-            <section id="awardsPage" class="page" style="display: none;">
-                <div class="container-lg py-5">
-                    <h2>Awards & Recognition</h2>
-                    <p class="section-subtitle">Achievements and honors</p>
-                    
-                    <div class="filter-buttons">
-                        <button class="award-filter-btn active" data-category="all" onclick="filterAwardsByCategory('all'); this.parentElement.querySelectorAll('.award-filter-btn').forEach(b => b.classList.remove('active')); this.classList.add('active');">All Awards</button>
-                        <button class="award-filter-btn" data-category="Scientific Excellence" onclick="filterAwardsByCategory('Scientific Excellence'); this.parentElement.querySelectorAll('.award-filter-btn').forEach(b => b.classList.remove('active')); this.classList.add('active');">Scientific Excellence</button>
-                        <button class="award-filter-btn" data-category="Thought Leadership" onclick="filterAwardsByCategory('Thought Leadership'); this.parentElement.querySelectorAll('.award-filter-btn').forEach(b => b.classList.remove('active')); this.classList.add('active');">Thought Leadership</button>
-                        <button class="award-filter-btn" data-category="Innovation" onclick="filterAwardsByCategory('Innovation'); this.parentElement.querySelectorAll('.award-filter-btn').forEach(b => b.classList.remove('active')); this.classList.add('active');">Innovation</button>
-                    </div>
-                    
-                    <div id="awardsContainer" class="awards-grid"></div>
-                </div>
-            </section>
-
-            <!-- TESTIMONIALS PAGE -->
-            <section id="testimonialsPage" class="page" style="display: none;">
-                <div class="container-lg py-5">
-                    <h2>Testimonials</h2>
-                    <p class="section-subtitle">What my peers say (fetched from LinkedIn)</p>
-                    <div id="testimonialsContainer" class="testimonials-grid"></div>
-                </div>
-            </section>
-
-            <!-- CREATIVE PURSUITS PAGE -->
-            <section id="creativePage" class="page" style="display: none;">
-                <div class="container-lg py-5">
-                    <h2>Creative Pursuits</h2>
-                    <p class="section-subtitle">Science communication and artistic expression</p>
-                    <div id="creativePursuitsContainer" class="creative-grid"></div>
-                </div>
-            </section>
-
-            <!-- TOOLS PAGE -->
-            <section id="toolsPage" class="page" style="display: none;">
-                <div class="container-lg py-5">
-                    <h2>Tools</h2>
-                    <p class="section-subtitle">Platforms and research frameworks</p>
-                    <div id="toolsProjectsContainer" class="tools-grid"></div>
-                </div>
-            </section>
-
-            <!-- BIO PAGE -->
-            <section id="bioPage" class="page" style="display: none;">
-                <div class="container-lg py-5">
-                    <h2>About Me</h2>
-                    <p class="section-subtitle">Perhaps a polymath, for life is far too dynamic to be viewed from a single lens.</p>
-                    <div id="bioContainer" class="bio-content"></div>
-                </div>
-            </section>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!--script src="data.js"></script>
-    <script src="app.js"></script-->
-        <script>
-        // Generate a unique timestamp (Unix epoch time in milliseconds)
-        var cacheBuster = new Date().getTime(); 
-        
-        // Use document.write to inject the script tag into the HTML
-        document.write('<script src="data.js?v=' + cacheBuster + '"></' + 'script>');
-        document.write('<script src="app.js?v=' + cacheBuster + '"></' + 'script>');
-
-    </script>
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title"><div class="contact-card"><div><p class="eyebrow">Open to thoughtful conversations</p><h2 id="contact-title">Research, collaboration, and teaching.</h2><p>For research, collaboration, teaching, writing, or a conversation about microbes and models.</p></div><a class="contact-email" href="mailto:nagpal.sun@gmail.com">nagpal.sun@gmail.com <span>↗</span></a></div><div class="contact-links"><a href="https://www.linkedin.com/in/snagpal/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/sunilnagpal" target="_blank" rel="noreferrer">GitHub</a><a href="https://nagpalsunil.medium.com/" target="_blank" rel="noreferrer">Medium</a><a href="https://orcid.org/0000-0001-9221-1443" target="_blank" rel="noreferrer">ORCID</a><a href="https://sunilnagpal.github.io/" target="_blank" rel="noreferrer">Previous site</a></div></section>
+    <div id="page-root" class="page-root" hidden></div>
+    <section class="next-pages section-pad" id="next-pages" aria-labelledby="next-pages-title"><div class="section-kicker"><span>10</span><span>More</span></div><h2 id="next-pages-title">More of the portfolio.</h2><div class="next-page-links"><a href="#page/publications">Publications <span>↗</span></a><a href="#page/outreach">Science outreach <span>↗</span></a><a href="#page/news">News <span>↗</span></a></div></section>
+  </main>
+  <div class="news-ticker" id="news-ticker"><div class="ticker-label">News</div><div class="ticker-track" id="ticker-track"></div><button id="ticker-close" type="button" aria-label="Hide news ticker">×</button></div>
+  <footer class="site-footer"><span>© Sunil Nagpal<a href="#top">Back to top ↑</a></footer>
+  <script src="site-data.js"></script><script src="content-data.js"></script><script src="microbiome-data.js"></script><script src="app.js"></script>
 </body>
 </html>
